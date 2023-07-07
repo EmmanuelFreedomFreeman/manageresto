@@ -145,7 +145,7 @@ function Orders() {
                         <p>TABLE : {value?.url?.table}</p>
                         <p>NUMBER OF ORDER : {value?.ordernumber} </p>
                         {value?.date !=null ? (
-                            <p>DATE : {new Date(value?.date).getDate()} / {new Date(value?.date).getMonth()}  / {new Date(value?.date).getFullYear()}  : {new Date(value?.date).getHours()}H - {new Date(value?.date).getMinutes()}Min - {new Date(value?.date).getSeconds()}Sec - {new Date(value?.date).getMilliseconds()}Milli </p>
+                            <p>DATE : {new Date(value?.date).getDate()} / {new Date(value?.date).getMonth()+1}  / {new Date(value?.date).getFullYear()}  : {new Date(value?.date).getHours()}H - {new Date(value?.date).getMinutes()}Min - {new Date(value?.date).getSeconds()}Sec - {new Date(value?.date).getMilliseconds()}Milli </p>
                         ):(<p></p>)}
                         
                         <p className='text-center underline font-bold'>CLIENT'S NAME : {value?.name.toUpperCase()}</p>
